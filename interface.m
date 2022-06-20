@@ -24,7 +24,7 @@ funcType=0;				%   0 - OneMinMax
                         %   1 - LOTZ
 
 %% Main body
-for funcType =0:1:0
+for funcType =0:1:1
     if funcType == 0
         nSet=[100:100:400];
     elseif funcType == 1
@@ -33,7 +33,7 @@ for funcType =0:1:0
         error('Check function type!\n');
     end
     
-    for nCnt=3:1:3
+    for nCnt=1:1:4
         n=nSet(nCnt);
         Max_gen_gsemo=n^4;
         fprintf('<<<< Now optimizes');
